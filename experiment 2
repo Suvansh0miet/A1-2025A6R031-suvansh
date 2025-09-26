@@ -1,0 +1,90 @@
+//addition,multiplication,remainder,subtraction
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    system("clear");   
+
+    int a, b, multiplication, addition, subtraction, remainder;
+
+    printf("Enter the first number = ");
+    scanf("%d", &a);
+
+    printf("Enter the second number = ");
+    scanf("%d", &b);
+
+    addition = a + b;
+    subtraction = a - b;
+    multiplication = a * b;
+    remainder = a % b;
+
+    printf("Addition = %d\n", addition);
+    printf("Subtraction = %d\n", subtraction);
+    printf("Multiplication = %d\n", multiplication);
+    printf("Remainder = %d\n", remainder);
+
+    return 0;
+}
+
+
+
+// area and perimeter of circle rectangle and square
+
+#include <stdio.h>
+
+#define PI 3.14
+
+int main() {
+    float radius, side, length, width;
+    float area, perimeter;
+
+    // CIRCLE
+    printf("Enter radius of circle: ");
+    scanf("%f", &radius);
+    area = PI * radius * radius;
+    perimeter = 2 * PI * radius;
+    printf("Circle area = %.2f\n", area);
+    printf("Circle perimeter = %.2f\n\n", perimeter);
+
+    // square 
+    printf("Enter side of square: ");
+    scanf("%f", &side);
+    area = side * side;
+    perimeter = 4 * side;
+    printf("Square area = %.2f\n", area);
+    printf("Square perimeter = %.2f\n\n", perimeter);
+
+   // rectangle
+    printf("Enter length and width of rectangle: ");
+    scanf("%f %f", &length, &width);
+    area = length * width;
+    perimeter = 2 * (length + width);
+    printf("Rectangle area = %.2f\n", area);
+    printf("Rectangle perimeter = %.2f\n", perimeter);
+
+    return 0;
+}
+
+
+\\distance between two points
+
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x1, y1, x2, y2, distance;
+
+    printf("Enter coordinates of first point of the first line (x1, y1): ");
+    scanf("%f %f", &x1, &y1);
+
+    printf("Enter coordinates of second point of the second line (x2, y2): ");
+    scanf("%f %f", &x2, &y2);
+
+    distance = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    printf("Euclidean distance between the two points is: %.4f\n", distance);
+
+    return 0;
+}
