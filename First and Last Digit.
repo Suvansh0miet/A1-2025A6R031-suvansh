@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,first,last, count;
+    scanf("%d", &n);
+    count = log10(n);
+    first = n/pow(10, count);
+    last = n%10;
+    printf("%d %d", first, last);
+    return 0;
+}
